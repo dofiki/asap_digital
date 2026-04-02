@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #282462;
+  --color-secondary: #fffff;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #000000;
+  --color-text-tertiary: #282462;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes clients-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.clients-scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.clients-scroll-track {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  animation: clients-scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.clients-scroll-track:hover {
+  animation-play-state: paused;
+}
+
+.clients-logo-card {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border: 1px solid #e8ddd3;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  min-width: 160px;
+  height: 72px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.clients-logo-card:hover {
+  border-color: #081481;
+  background: #ffffff;
+}
+
+.clients-logo-placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@keyframes clients-scroll-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.clients-scroll-track-reverse {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  animation: clients-scroll-reverse 30s linear infinite;
+  width: fit-content;
+}
+
+.clients-scroll-track-reverse:hover {
+  animation-play-state: paused;
+}
