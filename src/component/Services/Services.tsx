@@ -12,26 +12,26 @@ const Services = () => {
       title: "Content Branding",
       description:
         "Structuring and aligning content with brand identity, tone, and positioning across all platforms.",
-      src: "./public/assets/branding.svg",
+      src: "/assets/branding.svg",
     },
 
     {
       title: "Web Design & Dev Services",
       description:
         "Design and development of responsive, user-centric websites optimized for performance and usability.",
-      src: "./public/assets/web.svg",
+      src: "/assets/web.svg",
     },
     {
       title: "Production of Content",
       description:
         "Execution and delivery of high-quality multimedia content including video, graphics, and digital assets.",
-      src: "./public/assets/production.svg",
+      src: "/assets/production.svg",
     },
     {
       title: "Digital Marketing",
       description:
         "Strategic promotion using digital channels such as search, display, and paid advertising to drive growth.",
-      src: "./public/assets/digital.svg",
+      src: "assets/digital.svg",
     },
     {
       title: "Social Media Marketing",
