@@ -96,7 +96,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white p-5 md:p-10 rounded-xl hover:bg-[#282462]
+            className="bg-white p-5 md:p-10 rounded-xl hover:bg-primary
             hover:text-text-primary transition-all delay-75 ease-in cursor-none
             outline outline-gray-500 flex flex-col items-center justify-center"
           >

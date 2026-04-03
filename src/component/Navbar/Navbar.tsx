@@ -44,12 +44,14 @@ const Navbar = () => {
         className="flex justify-around w-80 md:w-250  items-center mt-5 rounded-xl fixed
        bg-primary z-1000 outline-1 outline-white"
       >
-        <div
-          className="cursor-pointer font-bold text-2xl text-text-primary p-4 
+        <a href="#Home">
+          <div
+            className="cursor-pointer font-bold text-2xl text-text-primary p-4 
         rounded-2xl"
-        >
-          ASAP Digital
-        </div>
+          >
+            ASAP Digital
+          </div>
+        </a>
 
         <div className="flex gap-10 text-[1.1rem] text-text-primary">
           <ul className="hidden gap-8 md:flex cursor-pointer items-center">

@@ -5,6 +5,8 @@ import { OrbitControls } from "@react-three/drei";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitText from "gsap/SplitText";
+import { FiPhoneCall } from "react-icons/fi";
+import { LuCircleArrowDown } from "react-icons/lu";
 
 gsap.registerPlugin(useGSAP, SplitText);
 
@@ -55,33 +57,42 @@ const Hero = () => {
     >
       <div
         className="text-2xl max-w-500 md:max-w-200 text-text-secondary 
-        md:text-[2.8rem] transition-all flex flex-col h-100  md:h-90 
-        justify-around"
+        md:text-[2.8rem] transition-all flex flex-col h-90  md:h-110 
+        items-center md:items-start text-center md:text-left justify-around "
       >
-        <p className="text-sm md:text-[1.1rem]">
+        <p className=" text-sm md:text-[1.1rem]">
           Results-Driven Digital Marketing & Branding Agency
         </p>
         <h1 ref={mainText} className="text-3xl md:text-5xl font-bold">
           Strategic Digital Growth Partner for Branding, Marketing, and
           Performance Solutions
         </h1>
-        <p className="text-xl md:text-2xl">
+        <p className="text-[1rem] md:text-2xl opacity-70">
           <span className="font-bold text-text-tertiary">
             ASAP Digital by Easy Sewa Pvt. Ltd.
           </span>{" "}
           is a Nepal-based agency delivering data-driven, creative, and
           performance-focused digital solutions.
         </p>
+
+        <a href="tel:+9779843777976">
+          <button
+            className="flex items-center justify-center gap-3 bg-primary w-35 md:w-50 text-sm md:text-[1.1rem] font-bold
+              p-2 text-text-primary rounded-xl h-10 md:h-15 cursor-pointer hover:scale-110 transition-all ease-in"
+          >
+            <FiPhoneCall /> Let’s Talk
+          </button>
+        </a>
       </div>
       <img
         src="/assets/hero.svg"
-        className="hidden md:block md:absolute w-100 md:w-200 md:top-15 md:right-0"
+        className="hidden md:block absolute w-95 md:w-200 bottom-5 md:top-15 md:right-0"
       />
       <div
         ref={modelContainer}
-        className="text-text-secondary border-0 md:border border-black w-60 h-60
-       md:w-120 md:h-120 rounded-full pt-0 md:pt-20 relative overflow-visible flex self-start md:self-auto
-       pl-5 md:pl-0"
+        className="text-text-secondary border-0 md:border border-primary w-60 h-50
+       md:w-120 md:h-120 rounded-full pt-0 md:pt-20  overflow-visible 
+       pl-5 md:pl-5 relative pointer-events-none"
       >
         <Canvas camera={{ position: [5, 5, 10], fov: 50 }}>
           <Suspense fallback={null}>
@@ -99,6 +110,11 @@ const Hero = () => {
             <OrbitControls target={[0, 0, 0]} enablePan={false} />
           </Suspense>
         </Canvas>
+      </div>
+
+      {/* scroll down indicator */}
+      <div className="hidden absolute text-[#1d1a3b] bottom-5">
+        <LuCircleArrowDown size={40} />
       </div>
     </div>
   );
