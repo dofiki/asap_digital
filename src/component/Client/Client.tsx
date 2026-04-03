@@ -42,7 +42,7 @@ const OurClients = () => {
               </div>
             ))}
 
-            {/* Duplicate set for seamless loop */}
+            {/* Second set*/}
             {clientLogos.map((client, index) => (
               <div key={`second-${index}`} className="clients-logo-card">
                 {client.src ? (
@@ -81,7 +81,7 @@ const OurClients = () => {
               </div>
             ))}
 
-            {/* Duplicate set for seamless loop */}
+            {/* Second */}
             {clientLogos.map((client, index) => (
               <div key={`second-${index}`} className="clients-logo-card">
                 {client.src ? (

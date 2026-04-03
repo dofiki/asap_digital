@@ -72,7 +72,7 @@ const Services = () => {
   return (
     <div
       className="bg-[#BAD7DF] min-h-screen p-5 flex flex-col items-center
-       justify-center gap-10 md:p-15 relative scroll-mt-30"
+       justify-center gap-10 md:p-15 relative scroll-mt-30 cursor-none"
       id="Services"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setVisible(true)}
@@ -97,7 +97,7 @@ const Services = () => {
           <div
             key={index}
             className="bg-white p-5 md:p-10 rounded-xl hover:bg-[#282462]
-            hover:text-text-primary transition-all delay-75 ease-in cursor-pointer
+            hover:text-text-primary transition-all delay-75 ease-in cursor-none
             outline outline-gray-500 flex flex-col items-center justify-center"
           >
             <div className="w-30 md:w-50 md:h-50">
