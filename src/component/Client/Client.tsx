@@ -18,10 +18,10 @@ const OurClients = () => {
     <div className="relative py-16 px-4 scroll-mt-50 " id="Client">
       {/* Heading */}
       <div className="text-center flex flex-col items-center mb-12 max-w-121.25 mx-auto">
-        <h1 className="text-text-secondary text-4xl font-bold">Our Clients</h1>
+        <h1 className="text-primary text-4xl font-bold">Our Clients</h1>
       </div>
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-15">
         {/* Scroll Track */}
         <div className="clients-scroll-container">
           <div className="clients-scroll-track">
